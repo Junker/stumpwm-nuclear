@@ -12,19 +12,21 @@ Nuclear music player module for StumpWM
 
 - Enable HTTP API in the Nuclear player settings
 
+- download module:
+
 ```bash
 cd ~/.stumpwm.d/modules/
 git clone https://github.com/Junker/stumpwm-nuclear nuclear
 ```
 
-install dependency libraries:
+- install dependency libraries:
 
 ```lisp
 (ql:quickload "dexador")
 (ql:quickload "cl-json")
 ```
 
-load module:
+- load module:
 
 ```lisp
 (stumpwm:add-to-load-path "~/.stumpwm.d/modules/nuclear")
