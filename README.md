@@ -48,6 +48,7 @@ git clone https://github.com/Junker/stumpwm-nuclear nuclear
 - nuclear-play
 - nuclear-mute
 - nuclear-quit
+- nuclear-show-playing
 
 ### Parameters
 
