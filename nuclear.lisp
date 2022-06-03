@@ -95,3 +95,9 @@
 
 (defcommand nuclear-quit () ()
   (dex-post "/nuclear/player/quit"))
+
+(defcommand nuclear-show-playing () ()
+  (when-let* ((data (now-playing))
+              (artist (ml-artist data))
+              (name (ml-name data)))
+    (message (format nil "Nuclear playing: \"~A\" by \"~A\"" name artist))))
